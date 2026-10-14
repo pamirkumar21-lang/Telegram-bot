@@ -1,0 +1,10 @@
+{
+  "name": "kdrama-hub-telegram-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "20.x" },
+  "scripts": { "dev": "vercel dev", "check": "node --check api/webhook.js && node --check api/cron/daily.js && node --check api/cron/weekly.js && node --check lib/bot.js" },
+  "dependencies": { "firebase-admin": "^13.0.2" },
+  "devDependencies": { "vercel": "^39.2.0" }
+}
